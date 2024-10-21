@@ -157,3 +157,9 @@ USE_L10N = True
 # add 2024.10 s.ikeda カスタムユーザモデルを指定
 AUTH_USER_MODEL = 'internalusers.User'
 
+
+AUTHENTICATION_BACKENDS = [
+    'internalusers.auth_backends.InternalUserBackend',
+    'internalusers.auth_backends.ExternalUserBackend',    
+    'django.contrib.auth.backends.ModelBackend',
+]

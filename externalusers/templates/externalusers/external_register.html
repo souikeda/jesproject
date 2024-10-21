@@ -1,21 +1,16 @@
-<!-- external_register.html -->
 {% extends 'base.html' %}
-
-{% block title %}新規登録{% endblock %}
+{% load crispy_forms_tags %}
+{% block title %}新規メンバー登録{% endblock %}
 
 {% block content %}
 <div class="row justify-content-center">
-    <div class="col-md-4">
-        <div class="card shadow-sm">
-            <div class="card-body">
-                <h3 class="text-center">新規登録</h3>
-                <form method="post">
-                    {% csrf_token %}
-                    {{ form|crispy }}
-                    <button type="submit" class="btn btn-primary w-100">登録</button>
-                </form>
-            </div>
-        </div>
+    <div class="col-md-6">
+        <h2>新規メンバ登録</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form|crispy }}  <!-- Crispy Form を適用 -->
+            <button type="submit" class="btn btn-dark w-100 mt-3">登録する</button>
+        </form>
     </div>
 </div>
 {% endblock %}
