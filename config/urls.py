@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),  # Django管理画面
     path('internal/', include('internalusers.urls')),  # 内部ユーザのログインや認証処理
     path('external/', include('externalusers.urls')),  # 外部ユーザのログインや認証処理
+    path('jesapp/', include('jesapp.urls')),  # 外部ユーザのログインや認証処理
 ]

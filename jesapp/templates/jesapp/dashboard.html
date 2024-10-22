@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}ダッシュボード{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'jesapp/css/dashboard.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center">ダッシュボード</h1>
+
+    <!-- サンプルのコンテンツ部分 -->
+    <div class="row mt-4">
+        <!-- カテゴリのサイドバー -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">商品カテゴリ</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">カテゴリ1</li>
+                        <li class="list-group-item">カテゴリ2</li>
+                        <li class="list-group-item">カテゴリ3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- メインコンテンツ -->
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">検索結果</h5>
+                    <p class="card-text">ここに検索結果を表示します。</p>
+                    <!-- サンプルの商品カード -->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">商品1</h5>
+                                    <p class="card-text">¥2,200（税込）</p>
+                                    <a href="#" class="btn btn-primary">カートに追加</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">商品2</h5>
+                                    <p class="card-text">¥3,500（税込）</p>
+                                    <a href="#" class="btn btn-primary">カートに追加</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">商品3</h5>
+                                    <p class="card-text">¥4,800（税込）</p>
+                                    <a href="#" class="btn btn-primary">カートに追加</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -14,7 +14,8 @@ def external_login_view(request):
             user = authenticate(request, username=email, password=password, backend='internalusers.auth_backends.ExternalUserBackend')  # 外部ユーザ用バックエンドを指定
             if user:
                 login(request, user)
-                return redirect('external_dashboard')
+                return redirect('jesapp:dashboard')  # ダッシュボードにリダイレクト
+    
     else:
         form = ExternalUserLoginForm()
 

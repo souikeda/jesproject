@@ -1,0 +1,37 @@
+/* カスタムスタイル */
+
+/* ナビゲーションバーのスタイル */
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #d3d3d3;
+}
+
+/* 検索バーのスタイル */
+.navbar .form-control {
+    width: 300px;
+}
+
+.btn-outline-light {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Sign up ボタン */
+.navbar .btn-light {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ffffff;
+}
+
+.navbar .btn-light:hover {
+    background-color: #f1f1f1;
+    color: #000000;
+}

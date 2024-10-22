@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     
     'internalusers',  # 内部ユーザ用アプリ    
     'externalusers',  # 外部ユーザ用アプリ
+    'jesapp',
 ]
 
 MIDDLEWARE = [

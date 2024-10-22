@@ -1,0 +1,32 @@
+/* カスタムCSSでレイアウトとデザインを微調整 */
+.vertical-line {
+    border-left: 1px solid #000;
+    height: 100%;
+    margin: 0 auto;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.text-muted {
+    font-size: 0.85rem;
+}
+
+h2, h5 {
+    color: #000;
+}
+
+.btn-outline-dark {
+    border-color: #000;
+    color: #000;
+}
+
+.btn-outline-dark:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.border {
+    background-color: #f8f9fa;
+}
